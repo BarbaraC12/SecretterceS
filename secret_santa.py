@@ -98,7 +98,7 @@ class SecretSanta:
             message = MIMEMultipart()
             message['From'] = mailer
             message['To'] = dest['email']
-            message['Subject'] = "Secret Santa X Dualboot 2023"
+            message['Subject'] = "Secret Santa is coming"
             corps_message = f"""
             Hello little secret Santa {personne['name']},
 
