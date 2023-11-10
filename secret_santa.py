@@ -117,11 +117,11 @@ class SecretSanta:
 
             message.attach(MIMEText(corps_message, 'plain'))
 
-            # Connexion au serveur SMTP de Gmail
+            # Connetion to SMTP server from Gmail
             with smtplib.SMTP_SSL(smtp_name, smtp_port) as server:
                 server.login(mailer, mail_pwd)
 
-                # Envoi de l'e-mail
+                # Send mail
                 server.sendmail(mailer, dest['email'], message.as_string())
 
             print(f"E-mail envoyé à {personne['prenom']} {personne['nom']}.")
